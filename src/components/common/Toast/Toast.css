@@ -1,0 +1,44 @@
+.simple-toast-rect {
+  position: fixed;
+  bottom: 20px;        
+  right: 20px;
+  background: #ffffff;
+  color: #000000;
+  padding: 12px 18px;
+  border-radius: 6px;
+  border: 1px solid black;
+  border-top: 4px solid black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 180px;
+  z-index: 9999;
+  animation: fadeSlideUp 0.3s ease;
+}
+
+.toast-icon-rect {
+  width: 26px;
+  height: 26px;
+  background: black;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toast-tick-rect,
+.toast-cross-rect {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.toast-message-rect {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
