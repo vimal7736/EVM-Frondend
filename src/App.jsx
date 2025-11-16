@@ -1,11 +1,13 @@
-import Dashboard from './pages/Dashboard/Dashboard';
+import { lazy, Suspense } from 'react';
+const Dashboard = lazy(() => import('./pages/Dashboard/Dashboard'));
 import './App.css';
+import Loader from './components/common/Loader/Loader';
 
 function App() {
   return (
-    <div className="app">
+    <Suspense fallback={<Loader text="Loading..." />}>
       <Dashboard />
-    </div>
+    </Suspense>
   );
 }
 
