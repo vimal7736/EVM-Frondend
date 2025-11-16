@@ -26,7 +26,7 @@ const Header = ({ currentProfile, onProfileChange }) => {
         onProfileChange(result);
         setIsOpen(false);
       } catch (error) {
-        alert('Failed to create profile');
+        console.error(error);
       }
     }
   };

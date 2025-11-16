@@ -74,7 +74,6 @@ const EventForm = ({ onSubmit, onCancel, loading = false, initialData = null }) 
       }));
     } catch (error) {
       console.error('Failed to create profile:', error);
-      alert('Failed to create profile. Please try again.');
     }
   };
 
