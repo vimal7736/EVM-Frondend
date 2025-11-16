@@ -5,7 +5,8 @@ import Loader from './components/common/Loader/Loader';
 
 function App() {
   return (
-    <Suspense fallback={<Loader text="Loading..." />}>
+    <Suspense fallback={
+    <Loader text="Loading..." />}>
       <Dashboard />
     </Suspense>
   );

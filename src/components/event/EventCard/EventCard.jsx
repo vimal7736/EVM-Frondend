@@ -23,7 +23,6 @@ const EventCard = ({ event, userTimezone, onEdit }) => {
         { skip: !showLogs }
     );
 
-    console.log(logs,"looooa");
     
 
     const profileNames = event.profiles?.map(p => p.name || 'Unknown').join(', ') || 'No profiles';
